@@ -1,0 +1,74 @@
+.todo-card {
+  background-image: linear-gradient(
+    to right,
+    var(--main-bg-color-sidebar),
+    var(--secondary-bg-color-sidebar)
+  );
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  margin-left: 5svh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+
+  border-radius: 0 2svh 2svh 0;
+  border-left: 5px solid red;
+  height: 150px;
+}
+.todo-card-labels {
+  margin-bottom: auto;
+  margin-left: 5%;
+  font-size: var(--font-size-main-todo-labels);
+}
+
+.todo-card-options {
+  display: grid;
+  justify-items: end;
+  margin-right: 5%;
+  font-size: var(--font-size-main-todo-options);
+  grid-template-rows: repeat(4, 50px);
+}
+
+.btn--close {
+  color: green;
+}
+
+.btn--Low-priority,
+.btn--Medium-priority,
+.btn--High-priority {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.btn--High-priority {
+  background-color: rgb(255, 58, 58);
+}
+.btn--Medium-priority {
+  background-color: rgb(252, 195, 90);
+}
+.btn--Low-priority {
+  background-color: rgb(252, 252, 160);
+}
+
+/* ACTIVE PRIORITY */
+.High,
+.High .todo-card-options :nth-child(2) {
+  border-color: rgb(255, 58, 58);
+}
+
+.Medium,
+.Medium .todo-card-options :nth-child(3) {
+  border-color: rgb(252, 195, 90);
+}
+
+.Low,
+.Low .todo-card-options :nth-child(4) {
+  border-color: rgb(252, 252, 160);
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,44 @@
+.sidebar--container,
+.content--container {
+  height: 90%;
+}
+
+.sidebar--container {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+
+  background-image: linear-gradient(
+    to right,
+    var(--main-bg-color-sidebar),
+    var(--secondary-bg-color-sidebar)
+  );
+  border-radius: 10px;
+  margin-left: 5svh;
+
+  display: grid;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  color: var(--font-color-main);
+}
+
+.sidebar--todo-view {
+  margin-top: 50%;
+  margin-bottom: 100%;
+  margin-right: 5svh;
+}
+.sidebar--list-view {
+  border-top: 5px solid #fff;
+}
+
+h1 {
+  margin: 5%;
+  font-size: var(--font-size-main-menu);
+}
+
+a {
+  color: var(--font-color-main);
+  text-decoration: none;
+}
